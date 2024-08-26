@@ -7,8 +7,13 @@ public sealed partial class MainPage : Page
         this.InitializeComponent();
     }
 
-    private void Button_Click(object sender, RoutedEventArgs e)
+    private void Button_Click_Highlighted(object sender, RoutedEventArgs e)
     {
         VisualStateManager.GoToState(this, "Highlighted", true);
+    }
+
+    private void Button_Click_Loading(object sender, RoutedEventArgs e)
+    {
+        VisualStateManager.GoToState(this, "Loading", true);
     }
 }

@@ -15,8 +15,7 @@
             <!-- Error Message: Operator '+=' cannot be applied to operands of type 'VisualState' and 'lambda expression'  -->
                 <VisualState x:Name="Loading">
                     <VisualState.Setters>
-                        <Setter Target="EmptyView.Visibility" Value="Collapsed"/>
-                        <Setter Target="GiftView.Visibility" Value="Collapsed"/>
+                         <Setter Target="TextLabel.Foreground" Value="Blue"/>
                     </VisualState.Setters>
                 </VisualState>
             <!-- end -->
@@ -31,8 +30,11 @@
       <TextBlock x:Name="TextLabel" AutomationProperties.AutomationId="HelloTextBlock"
           Text="Hello Uno Platform"
           HorizontalAlignment="Center" />
-      <Button Content="Change State"
-          Click="Button_Click"
+      <Button Content="Change to Highlighted State"
+          Click="Button_Click_Highlighted"
+          HorizontalAlignment="Center" />
+      <Button Content="Change to Loading State"
+          Click="Button_Click_Loading"
           HorizontalAlignment="Center" />
   </StackPanel>
 </Page>
